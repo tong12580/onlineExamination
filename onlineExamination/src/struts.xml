@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!--     常量配置 -->
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <package name="com.yt.action" extends="struts-default">
+    	<interceptors>
+    		<interceptor name="authentication" class="com.yt.action.AuthenticationInterceptor"></interceptor>	<!--这是拦截器的配置  -->
+    	</interceptors>
+    	<action name="loginAction" class="com.yt.action.LoginAction">
+	    	<result name="error">/registerErr.jsp</result>
+	    	<result name="success">/teacher.jsp</result>
+	    	<result name="login">/index.jsp</result>
+    	</action>
+    	<action name="chagerAction" class="com.yt.action.ChagerAction">
+    		<interceptor-ref name="authentication"></interceptor-ref>		<!--拦截  -->
+    		<result name="login">/login.jsp</result>
+	    	<result name="success">/paper.jsp</result>
+	    	<result name="error">/sorry.jsp</result>
+    	</action>
+    	<action name="registerAction" class="com.yt.action.RegisterAction">
+    		<result name="success">/registerOk.jsp</result>
+    		<result name="error">/registerErr.jsp</result>
+    	</action>
+    	<action name="updatAction" class="com.yt.action.UpdatAction">
+    		<interceptor-ref name="authentication"></interceptor-ref>
+    		<result name="login">/login.jsp</result>
+    		<result name="success">/updatOK.jsp</result>
+    		<result name="error">/updatErr.jsp</result>
+    	</action>
+    	<action name="paperAction" class="com.yt.action.PaperAction">
+    		<interceptor-ref name="authentication"></interceptor-ref>
+    		<result name="login">/login.jsp</result>
+    		<result name="success">/refer.jsp</result>
+    	</action>
+    	<action name="referAction" class="com.yt.action.ReferAction">
+    		<interceptor-ref name="authentication"></interceptor-ref>
+    		<result name="login">/login.jsp</result>
+    		<result name="success">/refer1.jsp</result>
+    	</action>
+    	<action name="usersListAction" class="com.yt.action.UsersListAction"></action>
+    	<action name="scoreListAction" class="com.yt.action.ScoreListAction"></action>
+    	<action name="questionsListAction" class="com.yt.action.QuestionsListAction"></action>
+    	<action name="questions2ListAction" class="com.yt.action.Questions2ListAction"></action>
+    	<action name="questions3ListAction" class="com.yt.action.Questions3ListAction"></action>
+    </package>
+</struts>    

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    
+	<!-- 描述类的标签 -->
+	<class name="com.yt.entity.Score">
+		<!-- 用户来描述类的对象标识，最终该标识就会生成数据库的主键 -->
+		<id name="scoreid">
+			<!-- 主键生成器 -->
+			<generator class="native" />
+		</id>
+		<property name="subject"/>
+		<property name="username"/>
+		<property name="score"/>
+		<property name="studentid"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+@CHARSET "UTF-8"; 
+a {
+                /*内边距*/
+                padding: 15px 20px 15px 20px;
+               /*去掉下划线*/
+                text-decoration: none;
+               /*颜色*/
+                color:black;
+                /*左边距*/
+                margin-left: -5px;
+                /* 这是用于动画的背景 */
+              
+                /* 调整图片位置的左边 */
+                background-position: left;
+                -webkit-transition: all 0.8s ease-in-out;
+                /* 动画和过渡在Firefox(不支持)*/
+                -moz-transition: all 0.8s ease-in-out;
+                /*动画和过渡Opera(不支持)*/
+                -o-transition: all 0.8s ease-in-out;
+            }
+            a:hover {
+                color: white;
+                /* Align the image position of the background to the right*/
+                background-position:right;
+}

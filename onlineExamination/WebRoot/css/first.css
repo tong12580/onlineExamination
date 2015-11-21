@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+#footer {
+	background-color: #4f4b4a;
+    border-top: 2px solid #dfdfdf;
+    clear: both;
+    color: #999;
+    font-family: "宋体";
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}

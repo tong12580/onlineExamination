@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!-- ===================================== -->  
+<!--   -->  
+<!-- ===================================== -->  
+  
+<!--default="clean"定义ant运行到target  clean这一步结束-->  
+<project name="kifp2" default="4-clean" basedir=".">  
+    <description>kifp2</description>  
+    <!--属性设置-->  
+    <property environment="env" />  
+    <property name="java.lib.dir" value="${env.JAVA_HOME}/lib" />      
+
+	<!--
+	kfsp平台 kisp理财 kcsp 众筹 kasp 账户  kssp 产股权交易
+	-->
+	 <property name="module1" value="common" />  
+
+	 
+    <property name="build1.dir" value="${basedir}/build/build-${module1}" />  
+	<property name="src1.dir" value="${basedir}/src" /> 
+    <property name="classes1.dir" value="${build1.dir}/classes" />  	
+	<property name="dist1.dir" value="${build1.dir}/dist" /> 	
+    <property name="jar1.file" value="kifp-${module1}.jar" />  
+	
+	
+	
+	<!-- 设置javac的debug选项 -->
+	 <property name="build.debug" value="true" />
+          
+    <!-- 基本编译路径设置 定义多个classpath-->  
+    <path id="compile.classpath">  
+        <fileset dir="${java.lib.dir}">  
+            <include name="tools.jar" />  
+        </fileset>  
+        <fileset dir="${basedir}/WebRoot/WEB-INF/lib">  
+            <include name="*.jar" />  
+        </fileset> 
+<!--		
+    	<fileset dir="${basedir}/web/WEB-INF/jars">  
+    	            <include name="*.jar" />  
+    	</fileset>  -->
+    </path>  
+      
+    <!-- 运行路径设置 -->  
+    <!--path id="run.classpath">  
+        <path refid="compile.classpath" />  
+        <pathelement location="${classes.dir}" />  
+    </path-->  
+      
+    <!-- 排除java源文件的模式集 -->  
+    <patternset id="no.java">  
+        <exclude name="**/*.java" />  
+    </patternset>  
+      
+    <!-- 初始化,建立目录,将多个src目录复制到同一src目录，编译，打包完成后自动清除 -->  
+    <target name="1-init" description="初始化,建立目录,复制文件">  
+    	 <echo level="info">init...</echo> 
+    	
+		<delete dir="${build1.dir}" />  
+        <mkdir dir="${build1.dir}" />  				
+        <mkdir dir="${classes1.dir}" />  
+    	<mkdir dir="${dist1.dir}" />  
+		
+	
+ 
+ 
+        <copy todir="${classes1.dir}">    <fileset dir="${src1.dir}">    <patternset refid="no.java" />    </fileset>   </copy>   
+ 
+    </target>  
+ 
+    <!-- 编译源文件-->  
+    <target name="2-compile" depends="1-init" description="编译源文件">  
+    	 <echo level="info">compile...</echo> 
+        <javac debug="true" srcdir="${basedir}/src" destdir="${classes1.dir}"  includeAntRuntime="false" source="1.6" target="1.6" >  
+        	<compilerarg line="-encoding UTF-8 "/> 
+<!--		 <compilerarg value="-Xlint:unchecked " /> -->
+        	<classpath refid="compile.classpath" />  
+        </javac>  
+    </target>  
+	
+      
+    <!-- 打包类文件   -->
+    <target name="3-copyToWEB-INF" depends="2-compile" description="打包类文件">  
+        <echo level="info">jar...</echo> 
+		
+        <jar jarfile="${dist1.dir}/${jar1.file}" >   <fileset dir="${classes1.dir}" includes="**/*.*" />   </jar>  
+    	<copy todir="${basedir}/WebRoot/WEB-INF/lib">    <fileset dir="${dist1.dir}">   <include name="**/*.jar" />    </fileset>   </copy> 		
+		</target>  
+ 
+    <!-- 清理,删除临时目录   --> 
+    <target name="4-clean" depends="3-copyToWEB-INF" description="清理,删除临时目录">  
+    	 <echo level="info">clean...</echo> 
+ 
+        <delete dir="${build1.dir}" /> 
+		
+		<delete dir="./build" />	
+        <delete dir="./classes" />	
+		
+    </target> 
+      
+ 
+</project> 

@@ -1,0 +1,427 @@
+
+1-init:
+     [echo] init...
+   [delete] Deleting directory E:\study\onlineExamination8\build\build-common
+    [mkdir] Created dir: E:\study\onlineExamination8\build\build-common
+    [mkdir] Created dir: E:\study\onlineExamination8\build\build-common\classes
+    [mkdir] Created dir: E:\study\onlineExamination8\build\build-common\dist
+     [copy] Copying 9 files to E:\study\onlineExamination8\build\build-common\classes
+     [copy] Copied 8 empty directories to 4 empty directories under E:\study\onlineExamination8\build\build-common\classes
+
+2-compile:
+     [echo] compile...
+    [javac] Compiling 30 source files to E:\study\onlineExamination8\build\build-common\classes
+    [javac] 警告: [options] 未与 -source 1.6 一起设置引导类路径
+    [javac] E:\study\onlineExamination8\src\com\yt\action\AuthenticationInterceptor.java:5: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\AuthenticationInterceptor.java:6: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.ActionInvocation;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\AuthenticationInterceptor.java:7: 错误: 程序包com.opensymphony.xwork2.interceptor不存在
+    [javac] import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
+    [javac]                                           ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\AuthenticationInterceptor.java:9: 错误: 找不到符号
+    [javac] public class AuthenticationInterceptor extends AbstractInterceptor {
+    [javac]                                                ^
+    [javac]   符号: 类 AbstractInterceptor
+    [javac] E:\study\onlineExamination8\src\com\yt\action\AuthenticationInterceptor.java:18: 错误: 找不到符号
+    [javac] 	public String intercept(ActionInvocation invocation) throws Exception {
+    [javac] 	                        ^
+    [javac]   符号:   类 ActionInvocation
+    [javac]   位置: 类 AuthenticationInterceptor
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:5: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:7: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:8: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.ActionContext;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:16: 错误: 找不到符号
+    [javac] public class ChagerAction implements Action{
+    [javac]                                      ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:3: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:5: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:6: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.ActionContext;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:10: 错误: 找不到符号
+    [javac] public class LoginAction implements Action{
+    [javac]                                     ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:5: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:7: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:8: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.ActionContext;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:14: 错误: 找不到符号
+    [javac] public class PaperAction implements Action{
+    [javac]                                     ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions2ListAction.java:7: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions2ListAction.java:10: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions2ListAction.java:15: 错误: 找不到符号
+    [javac] public class Questions2ListAction implements Action {
+    [javac]                                              ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions3ListAction.java:7: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions3ListAction.java:10: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions3ListAction.java:15: 错误: 找不到符号
+    [javac] public class Questions3ListAction implements Action {
+    [javac]                                              ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\QuestionsListAction.java:7: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\QuestionsListAction.java:10: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\QuestionsListAction.java:15: 错误: 找不到符号
+    [javac] public class QuestionsListAction implements Action {
+    [javac]                                             ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ReferAction.java:6: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ReferAction.java:7: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.ActionContext;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ReferAction.java:12: 错误: 找不到符号
+    [javac] public class ReferAction implements Action {
+    [javac]                                     ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\RegisterAction.java:3: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\RegisterAction.java:5: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\RegisterAction.java:10: 错误: 找不到符号
+    [javac] public class RegisterAction implements Action{
+    [javac]                                        ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ScoreListAction.java:7: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ScoreListAction.java:10: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ScoreListAction.java:15: 错误: 找不到符号
+    [javac] public class ScoreListAction implements Action {
+    [javac]                                         ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\UpdatAction.java:4: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\UpdatAction.java:6: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\UpdatAction.java:7: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.ActionContext;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\UpdatAction.java:12: 错误: 找不到符号
+    [javac] public class UpdatAction implements Action{
+    [javac]                                     ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\action\UsersListAction.java:7: 错误: 程序包org.apache.struts2不存在
+    [javac] import org.apache.struts2.ServletActionContext;
+    [javac]                          ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\UsersListAction.java:11: 错误: 程序包com.opensymphony.xwork2不存在
+    [javac] import com.opensymphony.xwork2.Action;
+    [javac]                               ^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\UsersListAction.java:15: 错误: 找不到符号
+    [javac] public class UsersListAction implements Action {
+    [javac]                                         ^
+    [javac]   符号: 类 Action
+    [javac] E:\study\onlineExamination8\src\com\yt\dao\BaseDaoImpI.java:6: 错误: 程序包org.hibernate不存在
+    [javac] import org.hibernate.Session;
+    [javac]                     ^
+    [javac] E:\study\onlineExamination8\src\com\yt\mapping\TestMapping.java:3: 错误: 程序包org.hibernate.cfg不存在
+    [javac] import org.hibernate.cfg.Configuration;
+    [javac]                         ^
+    [javac] E:\study\onlineExamination8\src\com\yt\mapping\TestMapping.java:4: 错误: 程序包org.hibernate.tool.hbm2ddl不存在
+    [javac] import org.hibernate.tool.hbm2ddl.SchemaExport;
+    [javac]                                  ^
+    [javac] E:\study\onlineExamination8\src\com\yt\utils\HibernateUtils.java:3: 错误: 程序包org.hibernate不存在
+    [javac] import org.hibernate.Session;
+    [javac]                     ^
+    [javac] E:\study\onlineExamination8\src\com\yt\utils\HibernateUtils.java:4: 错误: 程序包org.hibernate不存在
+    [javac] import org.hibernate.SessionFactory;
+    [javac]                     ^
+    [javac] E:\study\onlineExamination8\src\com\yt\utils\HibernateUtils.java:5: 错误: 程序包org.hibernate.cfg不存在
+    [javac] import org.hibernate.cfg.Configuration;
+    [javac]                         ^
+    [javac] E:\study\onlineExamination8\src\com\yt\utils\HibernateUtils.java:6: 错误: 程序包org.hibernate.service不存在
+    [javac] import org.hibernate.service.ServiceRegistry;
+    [javac]                             ^
+    [javac] E:\study\onlineExamination8\src\com\yt\utils\HibernateUtils.java:7: 错误: 程序包org.hibernate.service不存在
+    [javac] import org.hibernate.service.ServiceRegistryBuilder;
+    [javac]                             ^
+    [javac] E:\study\onlineExamination8\src\com\yt\utils\HibernateUtils.java:11: 错误: 找不到符号
+    [javac] 	private static SessionFactory    sessionFactory =null;
+    [javac] 	               ^
+    [javac]   符号:   类 SessionFactory
+    [javac]   位置: 类 HibernateUtils
+    [javac] E:\study\onlineExamination8\src\com\yt\utils\HibernateUtils.java:26: 错误: 找不到符号
+    [javac] 	public static  Session getSession(){
+    [javac] 	               ^
+    [javac]   符号:   类 Session
+    [javac]   位置: 类 HibernateUtils
+    [javac] E:\study\onlineExamination8\src\com\yt\utils\HibernateUtils.java:33: 错误: 找不到符号
+    [javac] 	public static void closeSession(Session session){
+    [javac] 	                                ^
+    [javac]   符号:   类 Session
+    [javac]   位置: 类 HibernateUtils
+    [javac] E:\study\onlineExamination8\src\com\yt\action\AuthenticationInterceptor.java:23: 错误: 找不到符号
+    [javac] 			return Action.LOGIN;
+    [javac] 			       ^
+    [javac]   符号:   变量 Action
+    [javac]   位置: 类 AuthenticationInterceptor
+    [javac] E:\study\onlineExamination8\src\com\yt\action\AuthenticationInterceptor.java:17: 错误: 方法不会覆盖或实现超类型的方法
+    [javac] 	@Override
+    [javac] 	^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:22: 错误: 找不到符号
+    [javac] 		String subject =ServletActionContext.getRequest().getParameter("subject");
+    [javac] 		                ^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 ChagerAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:23: 错误: 找不到符号
+    [javac] 		String username=(String) ActionContext.getContext().getSession().get("username"); 
+    [javac] 		                         ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 ChagerAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:29: 错误: 找不到符号
+    [javac] 			ActionContext context=ActionContext.getContext();
+    [javac] 			^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 ChagerAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:29: 错误: 找不到符号
+    [javac] 			ActionContext context=ActionContext.getContext();
+    [javac] 			                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 ChagerAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:58: 错误: 找不到符号
+    [javac] 			return SUCCESS;
+    [javac] 			       ^
+    [javac]   符号:   变量 SUCCESS
+    [javac]   位置: 类 ChagerAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:60: 错误: 找不到符号
+    [javac] 			return ERROR;
+    [javac] 			       ^
+    [javac]   符号:   变量 ERROR
+    [javac]   位置: 类 ChagerAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\ChagerAction.java:18: 错误: 方法不会覆盖或实现超类型的方法
+    [javac] 	@Override
+    [javac] 	^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:14: 错误: 找不到符号
+    [javac] 		String studentid =ServletActionContext.getRequest().getParameter("studentid");
+    [javac] 		                  ^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:15: 错误: 找不到符号
+    [javac] 		String password =ServletActionContext.getRequest().getParameter("password");
+    [javac] 		                 ^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:16: 错误: 找不到符号
+    [javac] 		String power =ServletActionContext.getRequest().getParameter("power");
+    [javac] 		              ^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:23: 错误: 找不到符号
+    [javac] 				ActionContext context=ActionContext.getContext();
+    [javac] 				^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:23: 错误: 找不到符号
+    [javac] 				ActionContext context=ActionContext.getContext();
+    [javac] 				                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:27: 错误: 找不到符号
+    [javac] 				return LOGIN;
+    [javac] 				       ^
+    [javac]   符号:   变量 LOGIN
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:29: 错误: 找不到符号
+    [javac] 				ActionContext context=ActionContext.getContext();
+    [javac] 				^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:29: 错误: 找不到符号
+    [javac] 				ActionContext context=ActionContext.getContext();
+    [javac] 				                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:31: 错误: 找不到符号
+    [javac] 				return SUCCESS;
+    [javac] 				       ^
+    [javac]   符号:   变量 SUCCESS
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:33: 错误: 找不到符号
+    [javac] 				return ERROR;
+    [javac] 				       ^
+    [javac]   符号:   变量 ERROR
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:36: 错误: 找不到符号
+    [javac] 			return ERROR;
+    [javac] 			       ^
+    [javac]   符号:   变量 ERROR
+    [javac]   位置: 类 LoginAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\LoginAction.java:12: 错误: 方法不会覆盖或实现超类型的方法
+    [javac] 	@Override
+    [javac] 	^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:19: 错误: 找不到符号
+    [javac] 			String paperID=(String) ActionContext.getContext().getSession().get("paper");
+    [javac] 			                        ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:21: 错误: 找不到符号
+    [javac] 			String s=ServletActionContext.getRequest().getParameter(""+i);
+    [javac] 			         ^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:27: 错误: 找不到符号
+    [javac] 						ActionContext context=ActionContext.getContext();
+    [javac] 						^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:27: 错误: 找不到符号
+    [javac] 						ActionContext context=ActionContext.getContext();
+    [javac] 						                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:30: 错误: 找不到符号
+    [javac] 						ActionContext context=ActionContext.getContext();
+    [javac] 						^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:30: 错误: 找不到符号
+    [javac] 						ActionContext context=ActionContext.getContext();
+    [javac] 						                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:38: 错误: 找不到符号
+    [javac] 						ActionContext context=ActionContext.getContext();
+    [javac] 						^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:38: 错误: 找不到符号
+    [javac] 						ActionContext context=ActionContext.getContext();
+    [javac] 						                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:41: 错误: 找不到符号
+    [javac] 						ActionContext context=ActionContext.getContext();
+    [javac] 						^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:41: 错误: 找不到符号
+    [javac] 						ActionContext context=ActionContext.getContext();
+    [javac] 						                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:49: 错误: 找不到符号
+    [javac] 					ActionContext context=ActionContext.getContext();
+    [javac] 					^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:49: 错误: 找不到符号
+    [javac] 					ActionContext context=ActionContext.getContext();
+    [javac] 					                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:52: 错误: 找不到符号
+    [javac] 					ActionContext context=ActionContext.getContext();
+    [javac] 					^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:52: 错误: 找不到符号
+    [javac] 					ActionContext context=ActionContext.getContext();
+    [javac] 					                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:62: 错误: 找不到符号
+    [javac] 			ActionContext context=ActionContext.getContext();
+    [javac] 			^
+    [javac]   符号:   类 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:62: 错误: 找不到符号
+    [javac] 			ActionContext context=ActionContext.getContext();
+    [javac] 			                      ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:65: 错误: 找不到符号
+    [javac] 			String username=(String) ActionContext.getContext().getSession().get("username");
+    [javac] 			                         ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:66: 错误: 找不到符号
+    [javac] 			String studentid=(String) ActionContext.getContext().getSession().get("studentid");
+    [javac] 			                          ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:67: 错误: 找不到符号
+    [javac] 			String subject =(String) ActionContext.getContext().getSession().get("subject");
+    [javac] 			                         ^
+    [javac]   符号:   变量 ActionContext
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:78: 错误: 找不到符号
+    [javac] 				return SUCCESS;	
+    [javac] 				       ^
+    [javac]   符号:   变量 SUCCESS
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:81: 错误: 找不到符号
+    [javac] 				return SUCCESS;
+    [javac] 				       ^
+    [javac]   符号:   变量 SUCCESS
+    [javac]   位置: 类 PaperAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\PaperAction.java:59: 错误: 方法不会覆盖或实现超类型的方法
+    [javac] 	@Override
+    [javac] 	^
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions2ListAction.java:19: 错误: 找不到符号
+    [javac] 		ServletActionContext.getResponse().setCharacterEncoding("utf-8");
+    [javac] 		^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 Questions2ListAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions2ListAction.java:20: 错误: 找不到符号
+    [javac] 		String m=ServletActionContext.getRequest().getParameter("m");
+    [javac] 		         ^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 Questions2ListAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions2ListAction.java:22: 错误: 找不到符号
+    [javac] 		if(!"".equals(ServletActionContext.getRequest().getParameter("page"))&&ServletActionContext.getRequest().getParameter("page")!=null){
+    [javac] 		              ^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 Questions2ListAction
+    [javac] E:\study\onlineExamination8\src\com\yt\action\Questions2ListAction.java:22: 错误: 找不到符号
+    [javac] 		if(!"".equals(ServletActionContext.getRequest().getParameter("page"))&&ServletActionContext.getRequest().getParameter("page")!=null){
+    [javac] 		                                                                       ^
+    [javac]   符号:   变量 ServletActionContext
+    [javac]   位置: 类 Questions2ListAction
+    [javac] 100 个错误
+    [javac] 1 个警告
+
+BUILD FAILED
+E:\study\onlineExamination8\build.xml:74: Compile failed; see the compiler error output for details.
+
+Total time: 4 seconds
